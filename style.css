@@ -1,0 +1,27 @@
+body{
+    background-image: url("https://i.pinimg.com/736x/7d/a8/83/7da883ee42dacdf2d4b026a6496d2a6b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bloom { 
+    height: 300px;
+    width: 200px;
+    animation-name: fly;
+    top: 50%;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    position: absolute;
+}
+
+@keyframes fly {
+    from {
+        left: 0%;      /* улетает влево */
+    }
+    to {
+        left: calc(100%-200px) - 50px; /* летит вправо, минус ширина картинки */
+    }
+}
