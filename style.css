@@ -19,9 +19,9 @@ body{
 
 @keyframes fly {
     from {
-        left: 0%;      /* улетает влево */
+        left: 0%;
     }
     to {
-        left: calc(100%-200px) - 50px; /* летит вправо, минус ширина картинки */
+        left: calc(100%-200px-50px);
     }
 }
